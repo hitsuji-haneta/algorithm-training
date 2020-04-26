@@ -16,6 +16,7 @@ def main():
     input_string = input('year: ')
     if not input_string.isdecimal():
         print('year must be an integer')
+        sys.exit()
 
     for i in range(int(input_string)+1):
         if check_leap(i):
